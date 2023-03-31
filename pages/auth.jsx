@@ -1,9 +1,8 @@
-import Input from "../components/Input"
 import {useState, useCallback} from "react"
 import axios from "axios"
 import {signIn} from "next-auth/react"
 import {useRouter} from "next/router"
-
+import Input from "../components/Input"
 import {FcGoogle} from "react-icons/fc"
 import {FaGithub} from "react-icons/fa"
 
