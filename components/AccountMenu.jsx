@@ -2,10 +2,11 @@ import {signOut} from "next-auth/react"
 import useSessionUser from "../hooks/useSessionUser"
 
 export default function AccountMenu({visible}){
+    const {data} = useSessionUser()
+    
     if(!visible){
         return null
     }
-    const {data} = useSessionUser()
     return(
         <div className="bg-black w-56 absolute top-14 right-0 py-5 flex-col border-2 border-gray-800 flex">
             <div className="flex flex-col gap-3">
